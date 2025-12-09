@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 500px;
+            margin: 30px auto;
+        }
+        #taskList li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+        }
+        .done {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gestion de Tâches</h1>
+
+    <input type="text" id="taskInput" placeholder="Nouvelle tâche...">
+    <button id="addBtn">Ajouter</button>
+
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
